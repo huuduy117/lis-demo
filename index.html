@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm Dãy Con Tăng Dài Nhất (LIS)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tìm Dãy Con Tăng Dài Nhất (LIS)</h1>
+      <div class="input-group">
+        <label for="inputArray">Nhập dãy số (cách nhau bằng dấu phẩy):</label>
+        <input
+          type="text"
+          id="inputArray"
+          placeholder="Ví dụ: 10, 22, 9, 33, 21, 50"
+        />
+      </div>
+      <div class="button-group">
+        <button onclick="bruteForce()">Vét Cạn</button>
+        <button onclick="dynamicProgramming()">Quy Hoạch Động</button>
+        <button onclick="binarySearchDP()">Tìm Kiếm Nhị Phân + DP</button>
+      </div>
+      <div class="output">
+        <h3>Kết quả:</h3>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="xuly.js"></script>
+  </body>
+</html>
